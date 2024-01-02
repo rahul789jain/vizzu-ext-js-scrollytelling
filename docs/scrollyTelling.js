@@ -273,7 +273,7 @@ ScrollyTelling.init = function(Vizzu, parentElementSelector="body", articleEleme
         let animStateFunc = animStates[0];
         let currentIndex = Object.keys(Vizzu.prototype.scrollyTelling.storedCharts).length+1;
         chart.initializing.then(() => {
-            chart.setAnimation('0s');
+            
             animStateFunc(chart).then(() => {
                 chart.storeScrollyAnimation();
             }).then(() => {
